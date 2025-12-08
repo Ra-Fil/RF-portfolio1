@@ -4,7 +4,7 @@ import {
   SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, 
   SiNodedotjs, SiPython, SiPostgresql, 
   SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiCanva,
-  SiGoogleanalytics, SiGooglesearchconsole, SiMeta, SiGit, SiGithub
+  SiGoogleanalytics, SiGooglesearchconsole, SiMeta, SiGithub
 } from 'react-icons/si';
 import { 
   FaShopify, FaEnvelopeOpenText, FaBullhorn, FaChartLine, FaMobileAlt, FaPalette, FaPenNib 
