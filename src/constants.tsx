@@ -1,10 +1,12 @@
+import React from 'react';
 import { Project, Skill } from './types';
 
+// Import ikon z react-icons
 import { 
   SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, 
   SiNodedotjs, SiPython, SiPostgresql, 
   SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiCanva,
-  SiGoogleanalytics, SiGooglesearchconsole, SiMeta, SiGithub
+  SiGoogleanalytics, SiGooglesearchconsole, SiMeta, SiGit, SiGithub
 } from 'react-icons/si';
 import { 
   FaShopify, FaEnvelopeOpenText, FaBullhorn, FaChartLine, FaMobileAlt, FaPalette, FaPenNib 
@@ -49,54 +51,54 @@ export const SKILL_CATEGORIES: { [key: string]: { title: string; skills: Skill[]
   frontend: {
     title: 'Hlavní frontend dovednosti',
     skills: [
-      { name: 'HTML', icon: mainSkillIcon },
-      { name: 'CSS', icon: mainSkillIcon },
-      { name: 'JavaScript', icon: mainSkillIcon },
-      { name: 'React', icon: mainSkillIcon },
-      { name: 'TypeScript', icon: mainSkillIcon },
+      { name: 'React', icon: <SiReact className={`${mainIconClass} text-[#61DAFB]`} /> },
+      { name: 'HTML', icon: <SiHtml5 className={`${mainIconClass} text-[#E34F26]`} /> },
+      { name: 'CSS', icon: <SiCss3 className={`${mainIconClass} text-[#1572B6]`} /> },
+      { name: 'JavaScript', icon: <SiJavascript className={`${mainIconClass} text-[#F7DF1E]`} /> },
+      { name: 'TypeScript', icon: <SiTypescript className={`${mainIconClass} text-[#3178C6]`} /> },
     ],
   },
   backend: {
     title: 'Základy backendu',
     skills: [
-      { name: 'Node.js' },
-      { name: 'Python' },
-      { name: 'PostgreSQL' },
+      { name: 'Node.js', icon: <SiNodedotjs className={`${smallIconClass} text-[#339933]`} /> },
+      { name: 'Python', icon: <SiPython className={`${smallIconClass} text-[#3776AB]`} /> },
+      { name: 'PostgreSQL', icon: <SiPostgresql className={`${smallIconClass} text-[#4169E1]`} /> },
     ],
   },
   graphics: {
     title: 'Grafika pro online i offline',
     skills: [
-      { name: 'Adobe Photoshop' },
-      { name: 'Illustrator' },
-      { name: 'InDesign' },
-      { name: 'CorelDRAW' },
-      { name: 'Canva' },
+      { name: 'Adobe Photoshop', icon: <SiAdobephotoshop className={`${smallIconClass} text-[#31A8FF]`} /> },
+      { name: 'Illustrator', icon: <SiAdobeillustrator className={`${smallIconClass} text-[#FF9A00]`} /> },
+      { name: 'InDesign', icon: <SiAdobeindesign className={`${smallIconClass} text-[#FF3366]`} /> },
+      { name: 'CorelDRAW', icon: <FaPenNib className={`${smallIconClass} text-green-500`} /> }, // Zástupná ikona
+      { name: 'Canva', icon: <SiCanva className={`${smallIconClass} text-[#00C4CC]`} /> },
     ],
   },
   marketing: {
     title: 'Marketing',
     skills: [
-      { name: 'Ecomail' },
-      { name: 'Leadhub' },
-      { name: 'Boldem' },
-      { name: 'Google Analytics 4' },
-      { name: 'Looker Studio' },
-      { name: 'SEO' },
-      { name: 'reklamy Meta' },
+      { name: 'Ecomail', icon: <FaEnvelopeOpenText className={`${smallIconClass} text-accent-start`} /> }, // Zástupná
+      { name: 'Leadhub', icon: <FaBullhorn className={`${smallIconClass} text-yellow-500`} /> }, // Zástupná
+      { name: 'Boldem', icon: <FaEnvelopeOpenText className={`${smallIconClass} text-blue-400`} /> }, // Zástupná
+      { name: 'Google Analytics 4', icon: <SiGoogleanalytics className={`${smallIconClass} text-[#E37400]`} /> },
+      { name: 'Looker Studio', icon: <FaChartLine className={`${smallIconClass} text-blue-500`} /> }, // Zástupná
+      { name: 'SEO', icon: <SiGooglesearchconsole className={`${smallIconClass} text-[#4285F4]`} /> },
+      { name: 'reklamy Meta', icon: <SiMeta className={`${smallIconClass} text-[#0668E1]`} /> },
     ],
   },
   other: {
     title: 'Další',
     skills: [
-      { name: 'AI' },
-      { name: 'Shoptet' },
-      { name: 'Responsivní design' },
-      { name: 'UX/UI základy' },
-      { name: 'GitHub' },
+      { name: 'Shoptet', icon: <FaShopify className={`${smallIconClass} text-[#86B91A]`} /> }, // Používám Shopify ikonu jako zástupnou pro e-commerce
+      { name: 'Responsivní design', icon: <FaMobileAlt className={`${smallIconClass} text-purple-400`} /> },
+      { name: 'UX/UI základy', icon: <FaPalette className={`${smallIconClass} text-pink-400`} /> },
+      { name: 'Git & GitHub', icon: <SiGithub className={`${smallIconClass} text-white`} /> },
     ],
   },
 };
+
 
 export const PROJECTS: Project[] = [
   {
@@ -112,28 +114,28 @@ export const PROJECTS: Project[] = [
     id: "shoptet-banners",
     title: "Sekce vložených bannerů pro Shoptet",
     description: "Responzivní vložené bannery pro Shoptet Classic",
-    imageUrl: `/images/pujcovnaoutdooru.jpg`,
+    imageUrl: "/images/RF1.jpg",
     tags: ["JavaScript", "HTML", "CSS"],
   },
   {
     id: "shoptet-disco",
     title: "Bannery a Instagram widget pro Shoptet (Disco)",
     description: "Implementace responzivních bannerů a widgetu pro Instagram na míru pro šablonu Disco na platformě Shoptet.",
-    imageUrl: `/components/images/RF1.jpg`,
+    imageUrl: `/images/RF1.jpg`,
     tags: ["JavaScript", "HTML", "CSS", "AI"],
   },
   {
     id: "case-recording-app",
     title: "Firemní aplikace pro zaznamenání případu pomocí formuláře",
     description: "Vkládání textu, fotografií, do vstupního formuláře. Po odeslání se formulář odešle. V sekci admin možnost správy zaznamenané události, zaznamenávání stavu.",
-    imageUrl: `./images/RF1.jpg`,
+    imageUrl: `/images/RF1.jpg`,
     tags: ["React", "JavaScript", "HTML", "CSS", "Deployment", "AI"],
   },
   {
     id: "scraping-tool",
     title: "Nástroj pro scrapping",
     description: "Závěrečný projekt v rámci kurzu Engeto. Scrapuje výsledky z webových stránek a ukládá je do CSV.",
-    imageUrl: `${BASE_URL}images/RF1.jpg`,
+    imageUrl: `/images/RF1.jpg`,
     tags: ["Python"],
     repoUrl: "https://github.com/radkafilipova/engeto-scraper"
   }
