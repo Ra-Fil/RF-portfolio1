@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radka Filipová | Frontend Developer Portfolio</title>
+    
+    <link rel="icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3cdefs%3e%3clinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3e%3cstop offset='0%25' stop-color='%23db2777'/%3e%3cstop offset='100%25' stop-color='%23a21caf'/%3e%3c/linearGradient%3e%3c/defs%3e%3crect width='100' height='100' fill='%230D1117'/%3e%3ctext x='50' y='50' font-family='Poppins, sans-serif' font-size='50' font-weight='bold' fill='url(%23g)' dominant-baseline='central' text-anchor='middle'%3eRF%3c/text%3e%3c/svg%3e">
+    
+    <!-- SEO a Meta tagy -->
+    <meta name="description" content="Portfolio Radky Filipové - Frontend Developer & Graphic Designer. Ukázky projektů v Reactu, TypeScriptu a webovém designu." />
+    <meta name="keywords" content="Radka Filipová, frontend developer, web developer, portfolio, React, JavaScript, HTML, CSS, TypeScript, Brno, junior developer" />
+    <meta name="author" content="Radka Filipová" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://radkafilipova.github.io/RF-portfolio/" />
+    <meta property="og:title" content="Radka Filipová | Frontend Developer Portfolio" />
+    <meta property="og:description" content="Grafická designérka na cestě k Frontend developmentu. Prohlédněte si mé projekty." />
+    <meta property="og:image" content="https://radkafilipova.github.io/RF-portfolio/images/og-image.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN pro náhled) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0D1117',
+                        'secondary': '#161B22',
+                        'accent-start': '#db2777',
+                        'accent-end': '#a21caf',
+                        'accent-start-hover': '#EC407A',
+                        'accent-end-hover': '#AB47BC',
+                        'text-primary': '#C9D1D9',
+                        'text-secondary': '#8B949E',
+                        'border-color': '#30363D',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'text-wipe': 'textWipe 0.5s ease-out 0.4s forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        textWipe: {
+                            'from': { backgroundSize: '0% 100%' },
+                            'to': { backgroundSize: '100% 100%' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D1117;
+            color: #C9D1D9;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+
+</script>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.7",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-primary text-text-primary text-base">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
