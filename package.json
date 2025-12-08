@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ra-fil.github.io/RF-portfolio/",
+  "homepage": "https://ra-fil.github.io/RF-portfolio1/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
