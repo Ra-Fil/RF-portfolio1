@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
     id: "outdoor-rental",
     title: "Půjčovna outdoorového vybavení",
     description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení s vygenerovanou smlouvou zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení na skladě.",
-    imageUrl: `${BASE_URL}images/pujcovnaoutdooru.jpg`,
+    imageUrl: `src/components/images/pujcovnaoutdooru.jpg`,
     tags: ["React", "Node.js", "PostgreSQL", "GitHub", "UX"],
     liveUrl: "https://pujcovnaoutdooru.cz/",
     repoUrl: "https://github.com/radkafilipova/pujcovna-outdooru"
@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
     id: "shoptet-banners",
     title: "Sekce vložených bannerů pro Shoptet",
     description: "Responzivní vložené bannery pro Shoptet Classic",
-    imageUrl: `${BASE_URL}images/RF1.jpg`,
+    imageUrl: `/images/RF1.jpg`,
     tags: ["JavaScript", "HTML", "CSS"],
   },
   {
