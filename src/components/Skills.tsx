@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
           Moje Dovednosti
         </h2>
         <p className="text-lg text-text-secondary text-center max-w-3xl mx-auto mb-12">
-          Baví mě tvořit nejen krásné, ale i funkční weby – od návrhu po implementaci.
+          Baví mě tvořit hezké, ale i funkční weby – od návrhu po implementaci. Aktivně se vzdělávám:
         </p>
 
         {/* Hlavní dovednosti s velkými ikonami */}
@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Ostatní dovednosti pouze textově */}
-        <div className="mt-20 md:mt-24 animate-fade-in-up max-w-4xl mx-auto" style={{ animationDelay: '0.5s' }}>
+        <div className="mt-20 md:mt-24 max-w-4xl mx-auto" >
           <h3 className="text-3xl md:text-4xl font-bold mb-10 text-text-primary">
             Další technologie a nástroje
           </h3>
