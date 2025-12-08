@@ -119,14 +119,14 @@ export const PROJECTS: Project[] = [
     id: "shoptet-disco",
     title: "Bannery a Instagram widget pro Shoptet (Disco)",
     description: "Implementace responzivních bannerů a widgetu pro Instagram na míru pro šablonu Disco na platformě Shoptet.",
-    imageUrl: `${BASE_URL}images/RF1.jpg`,
+    imageUrl: `/components/images/RF1.jpg`,
     tags: ["JavaScript", "HTML", "CSS", "AI"],
   },
   {
     id: "case-recording-app",
     title: "Firemní aplikace pro zaznamenání případu pomocí formuláře",
     description: "Vkládání textu, fotografií, do vstupního formuláře. Po odeslání se formulář odešle. V sekci admin možnost správy zaznamenané události, zaznamenávání stavu.",
-    imageUrl: `${BASE_URL}images/RF1.jpg`,
+    imageUrl: `./images/RF1.jpg`,
     tags: ["React", "JavaScript", "HTML", "CSS", "Deployment", "AI"],
   },
   {
