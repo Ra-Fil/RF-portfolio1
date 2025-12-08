@@ -10,7 +10,7 @@ import {
   FaShopify, FaEnvelopeOpenText, FaBullhorn, FaChartLine, FaMobileAlt, FaPalette, FaPenNib 
 } from 'react-icons/fa';
 
-
+// Cesta nastavena na název repozitáře pro GitHub Pages
 export const BASE_URL = '/RF-portfolio1/';
 
 export const MY_NAME = "Radka";
@@ -40,8 +40,9 @@ export const ABOUT_ME = {
   )
 };
 
-
+// Společná třída pro hlavní ikony
 const mainIconClass = "w-12 h-12";
+// Společná třída pro menší ikony v seznamech
 const smallIconClass = "w-5 h-5";
 
 export const SKILL_CATEGORIES: { [key: string]: { title: string; skills: Skill[] } } = {
@@ -102,7 +103,7 @@ export const PROJECTS: Project[] = [
     id: "outdoor-rental",
     title: "Půjčovna outdoorového vybavení",
     description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení s vygenerovanou smlouvou zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení na skladě.",
-    imageUrl: `/images/pujcovnaoutdooru.jpg`,
+    imageUrl: `${BASE_URL}images/pujcovnaoutdooru.jpg`,
     tags: ["React", "Node.js", "PostgreSQL", "GitHub", "UX"],
     liveUrl: "https://pujcovnaoutdooru.cz/",
     repoUrl: "https://github.com/radkafilipova/pujcovna-outdooru"
