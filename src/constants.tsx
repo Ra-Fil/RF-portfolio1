@@ -16,20 +16,29 @@ export const ABOUT_ME = {
   description: (
     <>
       <p className="mb-4">
-        Jsem grafická designérka s dlouholetými zkušenostmi v oblasti vizuální komunikace. Programování mě začalo bavit natolik, že se mu chci věnovat naplno a <strong className="text-text-primary">hledám pracovní příležitost v oblasti webového vývoje</strong>.
+        Jsem juniorní frontend developerka s dlouholetými zkušenostmi v oblasti vizuální komunikace. Programování mě začalo bavit natolik, 
+        že se mu chci věnovat naplno a <strong className="text-text-primary">hledám pracovní příležitost v oblasti webového vývoje</strong>. 
       </p>
       <p className="mb-4">
-        Aktivně se vzdělávám v technologiích frontendu (HTML, CSS, JavaScript, React) i v základech backendu a databází. Mám za sebou úspěšně ukončené kurzy <strong className="text-text-primary">Pythonu</strong> a 
-        <strong className="text-text-primary"> Reactu</strong> (Engento.cz). Využívám online zdroje k praktickému rozvoji, včetně práce s AI.
+        Aktivně se vzdělávám v technologiích frontendu (HTML, CSS, JavaScript, React) a pokud to projekt vyžaduje, tak i v základech backendu a databází. 
+        Mám za sebou úspěšně ukončený kurz <strong className="text-text-primary">Pythonu</strong> (Engeto) a nyní procházím kurzem <strong className="text-text-primary"> Reactu </strong> 
+        (Engeto). Své znalosti dále rozvíjím na reálných projektech a k praktickému rozvoji využívám online zdroje, včetně práce s AI.
+      </p>      
+      <p className="mb-4">          
+        Díky zkušenostem z (nejen) vlastních webových projektů <strong className="text-text-primary">se na vývoj dívám v širších souvislostech</strong> – z pohledu 
+        uživatele, značky i obchodních cílů. Rozumím principům UX, UI i SEO.
+      </p>
+      <p className="mb-4">  
+        Mám praktické zkušenosti s úpravami kódu na platformě <strong className="text-text-primary">Shoptet </strong>(HTML, CSS, úpravy šablon, kódování bannerů) a s optimalizací webů pro konverze i 
+        vyhledávače. Projekt nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
       </p>
       <p className="mb-4">
-        Díky provozování a správě (nejen) vlastního e-shopu mám široký záběr – od online marketingu, UX, UI, SEO, analytiku až po úpravy kódu v prostředí <strong className="text-text-primary">Shoptet</strong> (HTML, CSS, kódování bannerů, úpravy šablon).
-      </p>
-      <p className="mb-4">
-        Spojuji <strong className="text-text-primary">kreativitu designéra s analytickým a technickým myšlením vývojáře</strong>. Baví mě hledat funkční a esteticky čistá řešení, učit se nové technologie a chápat projekty v širších souvislostech.
+        Spojuji <strong className="text-text-primary">kreativitu designéra s analytickým a technickým myšlením vývojáře</strong>. Baví mě hledat funkční 
+        a esteticky čistá řešení, učit se nové technologie a chápat projekty v širších souvislostech.
       </p>
       <p>
-        Hledám pozici <strong className="text-text-primary">junior frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně <strong className="text-text-primary">remote nebo on-site v Brně a okolí</strong>.
+        Hledám pozici <strong className="text-text-primary">junior frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně 
+        <strong className="text-text-primary"> on-site v Brně a okolí </strong> nebo remote.
       </p>
     </>
   )
@@ -84,7 +93,7 @@ export const SKILL_CATEGORIES: { [key: string]: { title: string; skills: Skill[]
       { name: 'Shoptet' },
       { name: 'Responsivní design' },
       { name: 'UX/UI základy' },
-      { name: 'Git & GitHub' },
+      { name: 'GitHub' },
     ],
   },
 };
@@ -94,11 +103,11 @@ export const PROJECTS: Project[] = [
   {
     id: "outdoor-rental",
     title: "Půjčovna outdoorového vybavení",
-    description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení s vygenerovanou výpujční smlouvou s objednnými položkami a údaji v PDF provozovateli i zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení na skladě.",
+    description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení, vygenerovanou výpujční smlouvou s objednnými položkami a údaji v PDF provozovateli i zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení na skladě.",
     imageUrl: "./images/pujcovnaoutdooru1.jpg",
-    tags: ["AI", "React", "Node.js", "Typescript", "PostgreSQL", "GitHub", "UX", "Deployment"],
+    tags: ["AI", "React", "Node.js", "Typescript", "PostgreSQL", "GitHub", "UI", "Deployment"],
     liveUrl: "https://www.pujcovnaoutdooru.cz/",
-    repoUrl: "https://github.com/radkafilipova/pujcovna-outdooru"
+    repoUrl: "https://github.com/Ra-Fil/pujcovnaoutdooru.git"
   },
   {
     id: "shoptet-banners",
@@ -111,29 +120,31 @@ export const PROJECTS: Project[] = [
   {
     id: "shoptet-disco",
     title: "Bannery a Instagram widget pro Shoptet (Disco)",
-    description: "Vkládání textu, fotografií, do vstupního formuláře. Po odeslání se formulář odešle. V sekci admin možnost správy zaznamenané události, zaznamenávání stavu.",
+    description: "Bannery a widget pro Instagram na míru pro šablonu Disco na Shoptetu.",
     imageUrl: `./images/sofiababy1.jpg`,
     tags: ["JavaScript", "HTML", "CSS", "AI"],
     liveUrl: "https://www.sofiababy.cz/",
   },
-  {
+
+
+  /*{
     id: "case-recording-app",
     title: "Firemní aplikace pro zaznamenání případu pomocí formuláře",
     description: "Vkládání textu, fotografií, do vstupního formuláře. Po odeslání se formulář odešle. V sekci admin možnost správy zaznamenané události, zaznamenávání stavu. Aplikaci dokončuji, ještě není náhled.",
     imageUrl: `./images/RF1.jpg`,
     tags: ["React", "AI", "JavaScript", "HTML", "Tailwind", "CSS"],
-  },
+  },*/
   {
     id: "scraping-tool",
     title: "Nástroj pro scrapping",
     description: "Závěrečný projekt v rámci kurzu Python Engeto. Scrapuje výsledky z webových stránek a ukládá je do CSV.",
     imageUrl: `./images/scrapper1.jpg`,
     tags: ["Python"],
-    repoUrl: "https://github.com/radkafilipova/engeto-scraper"
+    repoUrl: "https://github.com/Ra-Fil/treti_projekt.git"
   }
 ];
 
 export const CONTACT = {
   email: "r.filipova@email.cz",
-  linkedin: "https://linkedin.com/in/radka-filipova"
+  linkedin: "https://www.linkedin.com/in/radka-filipova"
 };
