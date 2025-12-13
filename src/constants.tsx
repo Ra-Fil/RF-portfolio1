@@ -29,7 +29,7 @@ export const ABOUT_ME = {
         uživatele, značky i obchodních cílů. Rozumím principům UX, UI i SEO.
       </p>
       <p className="mb-4">  
-        Mám praktické zkušenosti s úpravami kódu na platformě <strong className="text-text-primary">Shoptet </strong>(HTML, CSS, úpravy šablon, kódování bannerů) a s optimalizací webů pro konverze i 
+        Mám praktické zkušenosti s <strong className="text-text-primary">úpravami kódu na platformě Shoptet </strong>(HTML, CSS, úpravy šablon, kódování bannerů) a s optimalizací webů pro konverze i 
         vyhledávače. Projekt nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
       </p>
       <p className="mb-4">
