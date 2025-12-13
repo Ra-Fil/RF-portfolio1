@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
                 <h4 className="text-xl font-semibold text-accent-start mb-4">{category.title}</h4>
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map(skill => (
-                    <div key={skill.name} className="px-3 py-1.5 bg-secondary text-text-secondary text-base rounded-md border border-border-color hover:border-accent-start transition-colors duration-300">
+                    <div key={skill.name} className="px-3 py-1.5 bg-secondary text-text-secondary text-base rounded-md border border-border-color transition-colors duration-300">
                       <span>{skill.name}</span>
                     </div>
                   ))}

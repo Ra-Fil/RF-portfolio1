@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onImageClick }) => {
           <img 
             src={project.imageUrl} 
             alt={project.title} 
-            className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500" 
+            className="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500" 
           />
           <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
              <span className="text-white font-semibold px-4 py-2 bg-black/50 rounded-full backdrop-blur-sm">Zvětšit náhled</span>
