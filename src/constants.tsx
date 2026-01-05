@@ -30,14 +30,14 @@ export const ABOUT_ME = {
       </p>
       <p className="mb-4">  
         Mám praktické zkušenosti s <strong className="text-text-primary">úpravami kódu na platformě Shoptet </strong>(HTML, CSS, úpravy šablon, kódování bannerů) a s optimalizací webů pro konverze i 
-        vyhledávače. Projekty nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
+        vyhledávače. Projekt nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
       </p>
       <p className="mb-4">
         Spojuji <strong className="text-text-primary">kreativitu designéra s analytickým a technickým myšlením vývojáře</strong>. Baví mě hledat funkční 
         a esteticky čistá řešení, učit se nové technologie a chápat projekty v širších souvislostech.
       </p>
       <p>
-        Hledám pozici <strong className="text-text-primary"> frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně 
+        Hledám pozici <strong className="text-text-primary">frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně 
         <strong className="text-text-primary"> on-site v Brně a okolí </strong> nebo remote.
       </p>
     </>
@@ -60,9 +60,7 @@ export const SKILL_CATEGORIES: { [key: string]: { title: string; skills: Skill[]
   backend: {
     title: 'Základy backendu',
     skills: [
-      { name: 'Node.js' },
       { name: 'Python' },
-      { name: 'PostgreSQL' },
     ],
   },
   graphics: {
@@ -81,7 +79,7 @@ export const SKILL_CATEGORIES: { [key: string]: { title: string; skills: Skill[]
       { name: 'Ecomail' },
       { name: 'Leadhub' },
       { name: 'Boldem' },
-      { name: 'Google Analytics 4' },
+      { name: 'Google Analytics' },
       { name: 'Looker Studio' },
       { name: 'SEO' },
       { name: 'reklamy Meta' },
@@ -103,20 +101,41 @@ export const PROJECTS: Project[] = [
   {
     id: "outdoor-rental",
     title: "Půjčovna outdoorového vybavení",
-    description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení, vygenerovanou výpujční smlouvou s objednnými položkami a údaji v PDF provozovateli i zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení na skladě.",
+    description: "Komplexní e-commerce řešení s administrací produktů, správou objednávek a odesíláním emailových potvrzení. Při přijetí objednávky vygeneruje výpůjční smlouvou s objednnými položkami a údaji zákazníka a odešle PDF emailem provozovateli i zákazníkovi. Kontrola dostupnosti položek v kalendáři na základě počtu vybavení v databázi.",
     imageUrl: "./images/pujcovnaoutdooru1.jpg",
-    tags: ["AI", "React", "Node.js", "Typescript", "PostgreSQL", "GitHub", "UI", "Deployment"],
+    tags: [ "React", "Typescript", "AI", "PostgreSQL", "GitHub", "UI", "Deployment"],
     liveUrl: "https://www.pujcovnaoutdooru.cz/",
     repoUrl: "https://github.com/Ra-Fil/pujcovnaoutdooru.git"
   },
+
+  {
+    id: "rf-portfolio",
+    title: "Webová prezentace dovedností",
+    description: "Jednostránková prezentace mých dovedností a vytvořených projektů.",
+    imageUrl: `./images/rf-portfolio.jpg`,
+    tags: ["React", "AI", "JavaScript", "HTML", "github" ],
+    repoUrl: "https://github.com/Ra-Fil/RF-portfolio1.git",
+    liveUrl: "https://ra-fil.github.io/RF-portfolio1/",
+  },
+
+  {
+    id: "zet-app",
+    title: "Formulář pro zaznamenání požadavku",
+    description: "Zákazník po vyplnění a přidání příloh odešle formulář emailem firmě a v kopii zákazníkovi. Po přihlášení do admin možnost správy událostí, stažení souborů události, zaznamenávání stavu. Aplikaci ladím a dokončuji.",
+    imageUrl: `./images/zetapp.jpg`,
+    tags: ["Typescript", "AI", "JavaScript", "UI" , "PostgreSQL", "HTML", "github", "Tailwind" ],
+    repoUrl: "https://github.com/Ra-Fil/treti_projekt.git"
+  },
+
   {
     id: "shoptet-banners",
-    title: "Sekce vložených bannerů pro Shoptet",
+    title: "Sekce vložených bannerů pro Shoptet (Classic)",
     description: "Responzivní bannery a widget pro Instagram na míru pro šablonu Classic na platformě Shoptet.",
     imageUrl: "./images/abyto1.jpg",
     tags: ["AI", "JavaScript", "HTML", "CSS"],
     liveUrl: "https://www.abyto.cz/",
   },
+
   {
     id: "shoptet-disco",
     title: "Bannery a Instagram widget pro Shoptet (Disco)",
@@ -126,14 +145,6 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://www.sofiababy.cz/",
   },
 
-
-  /*{
-    id: "case-recording-app",
-    title: "Firemní aplikace pro zaznamenání případu pomocí formuláře",
-    description: "Vkládání textu, fotografií, do vstupního formuláře. Po odeslání se formulář odešle. V sekci admin možnost správy zaznamenané události, zaznamenávání stavu. Aplikaci dokončuji, ještě není náhled.",
-    imageUrl: `./images/RF1.jpg`,
-    tags: ["React", "AI", "JavaScript", "HTML", "Tailwind", "CSS"],
-  },*/
   {
     id: "scraping-tool",
     title: "Nástroj pro scrapping",
@@ -141,8 +152,9 @@ export const PROJECTS: Project[] = [
     imageUrl: `./images/scrapper1.jpg`,
     tags: ["Python"],
     repoUrl: "https://github.com/Ra-Fil/treti_projekt.git"
-  }
-];
+  },
+
+];  
 
 export const CONTACT = {
   email: "r.filipova@email.cz",
