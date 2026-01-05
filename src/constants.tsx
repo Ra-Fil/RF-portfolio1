@@ -30,14 +30,14 @@ export const ABOUT_ME = {
       </p>
       <p className="mb-4">  
         Mám praktické zkušenosti s <strong className="text-text-primary">úpravami kódu na platformě Shoptet </strong>(HTML, CSS, úpravy šablon, kódování bannerů) a s optimalizací webů pro konverze i 
-        vyhledávače. Projekt nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
+        vyhledávače. Projekty nevnímám pouze očima vývojáře, ale také uživatele a obchodníka.
       </p>
       <p className="mb-4">
         Spojuji <strong className="text-text-primary">kreativitu designéra s analytickým a technickým myšlením vývojáře</strong>. Baví mě hledat funkční 
         a esteticky čistá řešení, učit se nové technologie a chápat projekty v širších souvislostech.
       </p>
       <p>
-        Hledám pozici <strong className="text-text-primary">junior frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně 
+        Hledám pozici <strong className="text-text-primary"> frontend developerky</strong> (případně fullstack) s možností profesního růstu, ideálně 
         <strong className="text-text-primary"> on-site v Brně a okolí </strong> nebo remote.
       </p>
     </>
